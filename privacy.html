@@ -1,42 +1,140 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SpendWise - Destek ve Gizlilik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise - Privacy Policy</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome İkonları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; color: #333; }
-        h1, h2 { color: #2c3e50; }
+        :root {
+            --primary-dark: #0f172a; /* Gece Mavisi */
+            --accent-green: #10b981;  /* Modern Yeşil */
+            --bg-soft: #f8fafc;
+            --text-muted: #64748b;
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif; 
+            background-color: var(--bg-soft); 
+            color: #334155;
+            padding: 40px 0;
+        }
+        .policy-card { 
+            background: white; 
+            border-radius: 24px; 
+            box-shadow: 0 10px 40px rgba(15, 23, 42, 0.04); 
+            padding: 50px;
+            border: 1px solid #e2e8f0;
+        }
+        h1 { 
+            color: var(--primary-dark); 
+            font-weight: 800; 
+            font-size: 2.25rem;
+        }
+        h2 { 
+            color: var(--primary-dark); 
+            font-weight: 700; 
+            margin-top: 35px; 
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h2 i {
+            color: var(--accent-green);
+            font-size: 1.2rem;
+        }
+        .back-btn { 
+            text-decoration: none; 
+            color: var(--text-muted); 
+            font-weight: 600; 
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .back-btn:hover { 
+            color: var(--primary-dark);
+            transform: translateX(-3px);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .contact-box {
+            background-color: var(--bg-soft);
+            border-left: 4px solid var(--accent-green);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin-top: 15px;
+        }
+        .contact-box a {
+            color: var(--accent-green);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>SpendWise - Gizlilik Politikası</h1>
-    <p><em>Son Güncelleme: 28 Mayıs 2026</em></p>
-    
-    <p>At SpendWise, we value your privacy. This policy explains how your data is collected, used, and protected while using the SpendWise mobile application.</p>
 
-    <h2>1. Data Collected and Purpose of Use</h2>
-    <ul>
-        <li><strong>Financial Data:</strong> Expense and debt records you enter into the app are stored entirely on your device (locally). These records are never transmitted to our servers.</li>
-        <li><strong>Camera Access:</strong> Required for scanning receipts to detect amounts (OCR feature). Captured images are processed instantly and not stored.</li>
-        <li><strong>Biometric Data:</strong> Fingerprint or face recognition may be used for the in-app lock feature. SpendWise does not access your actual biometric data; verification is securely handled by the Android operating system.</li>
-    </ul>
+    <div class="container" style="max-width: 850px;">
+        <!-- Geri Dönüş Butonu -->
+        <div class="mb-4">
+            <a href="index.html" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home (Ana Sayfaya Dön)
+            </a>
+        </div>
+        
+        <!-- Gizlilik Politikası Kartı -->
+        <div class="policy-card">
+            <h1>SpendWise - Privacy Policy</h1>
+            <p class="text-muted"><em>Son Güncelleme / Last Updated: 28 Mayıs 2026</em></p>
+            <hr class="my-4" style="color: #cbd5e1;">
 
-    <h2>2. Third-Party Services</h2>
-    <p>Google Play Services and Google AdMob are used to display ads and provide app infrastructure. AdMob may use your Advertising ID to deliver personalized ads. Google ML Kit is used for on-device text recognition.</p>
+            <p class="lead fs-6 text-secondary">At SpendWise, we value your privacy. This policy explains how your data is collected, used, and protected while using the SpendWise mobile application.</p>
 
-    <h2>3. Data Security</h2>
-    <p>Your data is stored in a secure local database on your device. Users are responsible for backing up their own data.</p>
+            <h2><i class="fa-solid fa-database"></i> 1. Data Collected and Purpose of Use</h2>
+            <ul>
+                <li><strong>Financial Data:</strong> Expense and debt records you enter into the app are stored entirely on your device (locally). These records are never transmitted to our servers.</li>
+                <li><strong>Camera Access:</strong> Required for scanning receipts to detect amounts (OCR feature). Captured images are processed instantly and not stored.</li>
+                <li><strong>Biometric Data:</strong> Fingerprint or face recognition may be used for the in-app lock feature. SpendWise does not access your actual biometric data; verification is securely handled by the Android operating system.</li>
+            </ul>
 
-    <h2>4. Children’s Privacy</h2>
-    <p>SpendWise does not knowingly collect data from children under the age of 13.</p>
+            <h2><i class="fa-solid fa-server"></i> 2. Third-Party Services</h2>
+            <p>Google Play Services and Google AdMob are used to display ads and provide app infrastructure. AdMob may use your Advertising ID to deliver personalized ads. Google ML Kit is used for on-device text recognition.</p>
 
-    <h2>5. Permissions</h2>
-    <p>We request: CAMERA (receipt scanning), POST_NOTIFICATIONS (budget alerts), and USE_BIOMETRIC (app lock).</p>
+            <h2><i class="fa-solid fa-lock"></i> 3. Data Security</h2>
+            <p>Your data is stored in a secure local database on your device. Users are responsible for backing up their own data.</p>
 
-    <h2>6. Contact</h2>
-    <p>Email: codexiatechhq@gmail.com</p>
+            <h2><i class="fa-solid fa-child-reaching"></i> 4. Children’s Privacy</h2>
+            <p>SpendWise does not knowingly collect data from children under the age of 13.</p>
 
-    <hr>
-    <p><a href="https://selimcnr.github.io/">Ana Sayfaya Dön</a></p>
+            <h2><i class="fa-solid fa-key"></i> 5. Permissions</h2>
+            <p>We request: <strong>CAMERA</strong> (receipt scanning), <strong>POST_NOTIFICATIONS</strong> (budget alerts), and <strong>USE_BIOMETRIC</strong> (app lock).</p>
+
+            <h2><i class="fa-solid fa-envelope"></i> 6. Contact</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us:</p>
+            <div class="contact-box">
+                <i class="fa-regular fa-envelope me-2"></i><strong>Email:</strong> 
+                <a href="mailto:codexiatechhq@gmail.com">codexiatechhq@gmail.com</a>
+            </div>
+        </div>
+        
+        <!-- Footer Bölümü -->
+        <footer class="text-center mt-5 text-muted small">
+            <p>&copy; 2026 SpendWise. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
